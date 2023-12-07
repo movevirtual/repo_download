@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 import { useState } from "react";
-const webUrl = "http://localhost:3000";
+const webUrl = process.env.NEXT_PUBLIC_URL;
 
 export default function Page() {
   const [loading, setLoading] = useState(false);
